@@ -171,6 +171,15 @@ static pthread_mutex_t outputAudioFileLock;
     
 }
 
+- (void)setDuration:(float)theDuration
+{
+    _duration = theDuration;
+}
+
+- (void)setCurrentTime:(float)theCurrentTime
+{
+    _currentTime = theCurrentTime;
+}
 
 
 - (void)configureWriterCallback
